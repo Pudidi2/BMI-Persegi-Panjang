@@ -1,0 +1,90 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top: 10px;
+    color: #a30000d1;
+}
+
+main {
+    width: 80%;
+    margin: 5px auto 0;
+}
+#ppForm input[name="panjang"] {
+    grid-area: panjang;
+  }
+  
+  #ppForm input[name="lebar"] {
+    grid-area: lebar;
+  }
+  
+  
+  #studentForm button {
+    grid-area: button;
+  }
+  
+  #ppForm {
+    display: grid;
+    grid-template-columns: 1000fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "panjang panjang"
+      "lebar lebar"
+      "button button";
+      
+  }
+  
+  #ppForm * {
+    margin: 7px;
+    padding: 7px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  #ppForm button {
+    background-color: #a30000d1;
+    color: white;
+    border: 5px solid transparent;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #ppForm input {
+    border: 3px solid #a30000d1;
+    outline: none;
+  }
+  
+  #ppForm input:focus {
+    border: 3px solid #ffd700;
+  }
+  
+  #ppForm button:active {
+    border-color: #ffd700;
+  }
+
+  #tampilContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid gray;
+    background-color: #ebebeb;
+    color: #2f2f2f;
+    border-radius: 15px;
+  }
+  
+  #tampilContainer div {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #tampilContainer div * {
+    margin: 5px;
+  }
